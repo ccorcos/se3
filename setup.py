@@ -6,7 +6,7 @@ def readme():
 
 setup(
     name='se3',
-    version='0.1',
+    version='0.2',
     description='Homogenous transforms in special euclidian 3-space.',
     long_description=readme(),
     classifiers=[
