@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+if [ $# -lt 1 ]; then
+  echo "$0 file.md <style.css>"
+  exit;
+fi
+
+filename=$(basename "$1")
+extension="${filename##*.}"
+filename="${filename%.*}"
+
+if [ "$extension" = "md" ]; then
+  html=".html"
+  if [ -z $2 ]; then
+    # if no css
+    pandoc -s -S --mathjax --highlight-style pygments $1 -o $filename$html
+  else
+    pandoc -s -S --mathjax --highlight-style pygments -c $2 $1 -o $filename$html
+  fi
+fi
