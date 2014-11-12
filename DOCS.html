@@ -10,17 +10,6 @@
   <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 </head>
 <body>
-<div id="TOC">
-<ul>
-<li><a href="#special-euclidian-3-space-se3">Special Euclidian 3-space (SE3)</a><ul>
-<li><a href="#d-rotation-matrices">3D Rotation Matrices</a></li>
-<li><a href="#d-homogenous-transforms">3D Homogenous Transforms</a></li>
-</ul></li>
-</ul>
-</div>
-<h1 id="special-euclidian-3-space-se3">Special Euclidian 3-space (SE3)</h1>
-<p>Special euclidian 3-space is the world in which we live, dealing with 3D position and orientation (so technically more than 3 dimensions, but thats why its <em>special</em>).</p>
-<p>The <code>SE3</code> class allows us to do typical transformations easily with multiplication of the classes, as well as visualize the coordinate frame and information about it. At the heard of this class are 3D Homogenous transforms. Here’s how they work.</p>
 <h2 id="d-rotation-matrices">3D Rotation Matrices</h2>
 <p><span class="math">\(R_x\)</span> is known as roll, <span class="math">\(R_y\)</span> is pich, and <span class="math">\(R_z\)</span> is yaw.</p>
 <p><span class="math">\[R_x(\theta) = \begin{bmatrix}

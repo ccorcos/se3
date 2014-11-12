@@ -7,15 +7,15 @@ def readme():
 setup(
     name='se3',
     version='0.1',
-    description='Some useful function for homogenous transforms in special euclidian 3-space.',
+    description='Homogenous transforms in special euclidian 3-space.',
     long_description=readme(),
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Programming Language :: Python :: 2.7',
         'Intended Audience :: Science/Research',
     ],
-    keywords='keyword1 keyword2',
-    url='http://github.com/user/repo',
+    keywords='euclidian special homogenous transform rotation 3d',
+    url='https://github.com/ccorcos/se3',
     author='Chet Corcos',
     author_email='ccorcos@gmail',
     license='MIT',
